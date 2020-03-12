@@ -4,16 +4,27 @@ import argparse
 from pprint import *
 import sys
 import requests 
+import json
 
-parser = argparse.ArgumentParser(description='Json parser')
-parser.add_argument('string',metavar="<provide url here>", help= "Argv1 = provide url to parse")
-args = parser.parse_args()
+# parser = argparse.ArgumentParser(description='Json parser')
+# parser.add_argument('string',metavar="<provide url here>", help= "Argv1 = provide url to parse")
+# args = parser.parse_args()
 
-baseurl = str(sys.argv[1])
-# baseurl = "https://transit-sessions.s3-us-west-2.amazonaws.com/sessions.json"
+baseurl = "https://transit-sessions.s3-us-west-2.amazonaws.com/sessions.json"
+
 def parser(url):
 	req = requests.get(url)
-	return req.content
+	op = json.loads(req.content)
+	return op
 
+output = parser(baseurl)
 
-pprint (parser(baseurl))
+print ("#####################Task1 Output#########################")
+pprint (output)
+
+print ("#####################Task2 Output#########################")
+# print type(output)
+for element in output:
+	if element["id"] == 107:
+		pprint (element)
+print output[6]
