@@ -19,10 +19,11 @@ def parser(url):
 
 output = parser(baseurl)
 
-print ("#####################Task1 Output#########################\n")
-pprint (output)
+print ("\n#####################Task1 Output#########################\n")
 
-print ("#####################Task2 Output#########################\n")
+pprint (output) 
+
+print ("\n#####################Task2 Output#########################\n")
 # print type(output)
 for element in output:
 	if element["id"] == 107:
