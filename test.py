@@ -62,13 +62,18 @@ def getstatusbydeviceid(deviceid):
 	l=[]
 	for element in output:
 		if element["device_id"] == str(deviceid):
-			getstatus(element)			
+			getstatus(element)
 
 getstatusbydeviceid(3)
 
 print ("\n#####################Task5 Output by session id = %s#########################\n"%(args.session_id))
-
-getstatus(session_id(args.session_id))
+try:
+	getstatus(session_id(args.session_id))
+except:
+	print ("Status not found") 
 
 print ("\n#####################Task5 Output by device id = %s #########################\n"%(args.device_id))
-getstatusbydeviceid(args.device_id)
+try:
+	getstatusbydeviceid(args.device_id)
+except:
+	print ("Status not found")
