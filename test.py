@@ -42,7 +42,7 @@ def session_id(id_number):
 pprint (session_id(107))
 #### Task 2 can be also achievable by below ###################
 # pprint (output[6])
-print ("\n#####################Task3 Output session id =107#########################\n")
+print ("\n#####################Task3 Output session id =107###################################\n")
 def getstatus(dict):
 	if int(dict['status']) == 0:
 		print ("OK")
@@ -55,7 +55,7 @@ getstatus(session_id(107))
 # else:
 # 	print "CRITICAL"
 
-print ("\n#####################Task4 Output device id = 3#########################\n")
+print ("\n#####################Task4 Output device id = 3######################################\n")
 
 def getstatusbydeviceid(deviceid):
 	l=[]
