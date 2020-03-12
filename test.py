@@ -6,7 +6,7 @@ import sys
 import requests 
 
 parser = argparse.ArgumentParser(description='Json parser')
-parser.add_argument('string',metavar="<url>", help= "Argv1 = provide url to parse")
+parser.add_argument('string',metavar="<provide url here>", help= "Argv1 = provide url to parse")
 args = parser.parse_args()
 
 baseurl = str(sys.argv[1])
