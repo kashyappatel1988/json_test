@@ -6,4 +6,4 @@
 ### usage
 
 ```chmod +x test.py```
-``./test.py ```
+```./test.py ```
