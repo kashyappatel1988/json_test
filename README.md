@@ -5,5 +5,7 @@
 
 ### usage
 
-```chmod +x test.py```\r 
-```./test.py ```
+```
+chmod +x test.py
+./test.py 
+```
