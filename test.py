@@ -43,6 +43,7 @@ pprint (session_id(107))
 #### Task 2 can be also achievable by below ###################
 # pprint (output[6])
 print ("\n#####################Task3 Output session id =107###################################\n")
+#function to find a status from a given session "id" (single dict as session id key/value pairs are unique)
 def getstatus(dict):
 	if int(dict['status']) == 0:
 		print ("OK")
@@ -56,7 +57,7 @@ getstatus(session_id(107))
 # 	print "CRITICAL"
 
 print ("\n#####################Task4 Output device id = 3######################################\n")
-
+# Function to provide status from a given device_id (multiple dicts as device_id key/value pairs are not unique)
 def getstatusbydeviceid(deviceid):
 	l=[]
 	for element in output:
