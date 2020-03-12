@@ -27,4 +27,7 @@ print ("#####################Task2 Output#########################")
 for element in output:
 	if element["id"] == 107:
 		pprint (element)
-print output[6]
+#### Task 2 can be also achievable by below ###################
+# pprint (output[6])
+
+
